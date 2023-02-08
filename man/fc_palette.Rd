@@ -31,5 +31,5 @@ the darker "conifer_green".
 See \link[Forestry Commission]{https://www.gov.uk/government/organisations/forestry-commission} for the colours in action.
 }
 \examples{
-fc_palette()
+fc_palette(1)
 }

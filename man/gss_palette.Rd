@@ -34,5 +34,5 @@ code of those colours are returned.
 See \link[GSS data visualisation colour guidance]{https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/}
 }
 \examples{
-gss_palette()
+gss_palette(1)
 }
