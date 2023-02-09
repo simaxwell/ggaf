@@ -27,7 +27,7 @@ A `ggplot2` theme based on Government Analysis Function (AF) good practice guida
 
 Create a discrete colour scale using the AF/GSS palette.
 
-### `scale_x_gss_c()` \* `scale_y_gss_c()`
+### `scale_x_gss_c()` & `scale_y_gss_c()`
 
 Wrapper functions which modify the default scales for continuous x and y aesthetics.
 
@@ -38,13 +38,15 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(ggGSS)
 set.seed(3)
-df <- data.frame(x = seq(1, 10, 1),
-y = abs(rnorm(10) * 10))
+df <- data.frame(
+  x = seq(1, 10, 1),
+  y = abs(rnorm(10) * 10)
+)
 
 p <- ggplot(df, aes(x, y)) +
-geom_col()
+  geom_col()
 
 p +
-scale_y_gss_c() +
-theme_gss()
+  scale_y_gss_c() +
+  theme_gss()
 ```
