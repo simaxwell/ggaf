@@ -34,6 +34,7 @@ Wrapper functions which modify the default scales for continuous x and y aesthet
 ## Example
 
 ``` r
+library(ggplot2)
 library(ggGSS)
 set.seed(3)
 df <- data.frame(
