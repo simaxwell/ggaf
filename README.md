@@ -33,8 +33,6 @@ Wrapper functions which modify the default scales for continuous x and y aesthet
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(ggGSS)
 set.seed(3)
