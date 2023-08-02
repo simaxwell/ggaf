@@ -38,7 +38,6 @@ theme_gss <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark 
 
     # Suppress the y-axis label. Re-assign y-axis label to subtitle:
     #
-    #
 
     # GSS chart style:
     theme(
@@ -49,7 +48,6 @@ theme_gss <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark 
       # Panel:
       panel.background = ggplot2::element_blank(),
       panel.border = ggplot2::element_blank(),
-      # plot.margin = ggplot2::margin(0,15,0,15),
 
       # Global font size:
       text = ggplot2::element_text(size = font_size),
@@ -64,6 +62,12 @@ theme_gss <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark 
         margin = ggplot2::margin(b = 10)),
 
       # ...and my axe(s):
+      axis.title = ggplot2::element_text(
+        family = font_family,
+        size = font_size,
+        colour = "#000000"
+      ),
+
       axis.text = ggplot2::element_text(
         family = font_family,
         size = font_size,
