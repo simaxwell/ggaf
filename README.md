@@ -23,13 +23,13 @@ devtools::install_github("simaxwell/ggGSS")
 
 A `ggplot2` theme based on Government Analysis Function (AF) good practice guidance for [data visualisation](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/).
 
-### `scale_colour_gss()` & `scale_fill_gss()`
+### `scale_colour_gss_d()` & `scale_fill_gss_d()`
 
-Create a discrete colour scale using the AF/GSS palette.
+Create a discrete colour scale using the AF/GSS palette. Colours for the Forestry Commission (FC) and UK Health Security Agency (UKHSA) are also available.
 
 ### `scale_x_gss_c()` & `scale_y_gss_c()`
 
-Wrapper functions which modify the default scales for continuous x and y aesthetics.
+Wrapper functions which modify the default scale for continuous x and y aesthetics.
 
 ## Example
 
