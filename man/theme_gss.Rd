@@ -20,6 +20,8 @@ theme_gss(
 \item{grid}{Add x- or y-axis grid}
 
 \item{tick_mark}{Whether to add tick marks}
+
+\item{...}{Parameters passed to \code{\link[ggplot2]{theme}}}
 }
 \value{
 Returns a ggplot2 theme function.
@@ -35,6 +37,7 @@ set.seed(3)
 df <- data.frame(x = seq(1, 10, 1),
 y = abs(rnorm(10) * 10))
 
+library(ggplot2)
 p3 <- ggplot(df, aes(x, y)) +
 geom_col()
 
@@ -43,5 +46,5 @@ scale_y_gss_c() +
 theme_gss()
 }
 \author{
-Si Maxwell \email{simon.maxwell@forestresearch.gov.uk}
+Si Maxwell \email{simon.maxwell@ukhsa.gov.uk}
 }

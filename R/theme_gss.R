@@ -8,11 +8,12 @@
 #' @param font_family Font family
 #' @param grid Add x- or y-axis grid
 #' @param tick_mark Whether to add tick marks
+#' @param ... Parameters passed to \code{\link[ggplot2]{theme}}
 #'
 #' @return Returns a ggplot2 theme function.
 #' @export
 #'
-#' @author Si Maxwell \email{simon.maxwell@@forestresearch.gov.uk}
+#' @author Si Maxwell \email{simon.maxwell@@ukhsa.gov.uk}
 #'
 #' @importFrom ggplot2 element_blank
 #' @importFrom ggplot2 element_text
@@ -25,6 +26,7 @@
 #' df <- data.frame(x = seq(1, 10, 1),
 #' y = abs(rnorm(10) * 10))
 #'
+#' library(ggplot2)
 #' p3 <- ggplot(df, aes(x, y)) +
 #' geom_col()
 #'

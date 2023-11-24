@@ -11,9 +11,10 @@ generate_palette(palette = "GSS", direction = 1)
 \itemize{
 \item "GSS" (or "gss")
 \item "FC" (or "fc")
+\item "UKHSA" (or "ukhsa")
 }}
 
-\item{direction}{Sets the order of colours. If 1 (the default) colours are as output by fc_palette. If -1, the order of colours is reversed. For FC palette only}
+\item{direction}{For FC palette only: sets the order of the colours. If 1 (the default) colours are as output by fc_palette. If -1, the order of colours is reversed.}
 }
 \value{
 A function.
@@ -25,5 +26,5 @@ Generate palette
 ggplot2::discrete_scale("fill", "gss", generate_palette)
 }
 \author{
-Si Maxwell \email{simon.maxwell@forestresearch.gov.uk}
+Si Maxwell \email{simon.maxwell@ukhsa.gov.uk}
 }

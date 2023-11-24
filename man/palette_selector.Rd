@@ -11,6 +11,7 @@ palette_selector(palette = "GSS")
 \itemize{
 \item "GSS" (or "gss")
 \item "FC" (or "fc")
+\item "UKHSA" (or "ukhsa")
 }}
 }
 \value{
@@ -23,5 +24,5 @@ Select the palette of interest: GSS (default) or FC
 palette_selector(palette = "GSS")
 }
 \author{
-Si Maxwell \email{simon.maxwell@forestresearch.gov.uk}
+Si Maxwell \email{simon.maxwell@ukhsa.gov.uk}
 }

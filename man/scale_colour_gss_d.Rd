@@ -7,9 +7,9 @@
 scale_colour_gss_d(palette = "gss", direction = 1, ...)
 }
 \arguments{
-\item{palette}{The palette name: either GSS (default) or FC.}
+\item{palette}{The palette name: either GSS (default), FC or UKHSA.}
 
-\item{direction}{Sets the order of colours. If 1 (the default) colours are as output by fc_palette. If -1, the order of colours is reversed. For FC palette only.}
+\item{direction}{For FC palette only: sets the order of the colours. If 1 (the default) colours are as output by fc_palette. If -1, the order of colours is reversed.}
 
 \item{...}{Parameters to \code{\link[ggplot2]{discrete_scale}}.}
 }
@@ -23,5 +23,5 @@ Create a discrete ggplot2 colour scale function for the GSS colour palette.
 ggplot2::discrete_scale("colour", "gss", generate_palette("gss"))
 }
 \author{
-Si Maxwell \email{simon.maxwell@forestresearch.gov.uk}
+Si Maxwell \email{simon.maxwell@ukhsa.gov.uk}
 }

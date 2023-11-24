@@ -24,6 +24,8 @@
 #' @return Returns a named character vector.
 #' @export
 #'
+#'
+#'
 #' @examples
 #' gss_palette(1)
 gss_palette <- function(...) {

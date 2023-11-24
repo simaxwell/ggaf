@@ -6,9 +6,10 @@
 #' \itemize{
 #' \item "GSS" (or "gss")
 #' \item "FC" (or "fc")
+#' \item "UKHSA" (or "ukhsa")
 #' }
 #'
-#' @author Si Maxwell \email{simon.maxwell@@forestresearch.gov.uk}
+#' @author Si Maxwell \email{simon.maxwell@@ukhsa.gov.uk}
 #'
 #' @return Returns a named character vector.
 #' @export
@@ -25,7 +26,9 @@ palette_selector <- function(palette = "GSS") {
 
     `gss` = gss_palette(),
 
-    `fc` = fc_palette()
+    `fc` = fc_palette(),
+
+    `ukhsa` = ukhsa_palette()
 
   )
 
