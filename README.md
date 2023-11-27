@@ -36,16 +36,27 @@ Wrapper functions which modify the default scale for continuous x and y aestheti
 ``` r
 library(ggplot2)
 library(ggGSS)
-set.seed(3)
-df <- data.frame(
-  x = seq(1, 10, 1),
-  y = abs(rnorm(10) * 10)
+
+set.seed(7)
+
+# Create dummy data set:
+df <- expand.grid(
+  x = seq(1, 5, 1),
+  y = letters[1:2]
 )
 
-p <- ggplot(df, aes(x, y)) +
+df$z <- abs(rnorm(10) * 10)
+
+# Produce standard ggplot2 figure:
+p <- ggplot(df, aes(x, z, fill = y)) +
   geom_col()
 
+# Include AF/GSS recommended formatting and theme:
 p +
   scale_y_gss_c() +
   theme_gss()
+
+# Include AF/GSS colour palette:
+p +
+  scale_fill_gss_d()
 ```
