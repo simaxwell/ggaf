@@ -4,14 +4,13 @@
 \alias{generate_palette}
 \title{Generate palette}
 \usage{
-generate_palette(palette = "GSS", direction = 1)
+generate_palette(palette = "AF", direction = 1)
 }
 \arguments{
 \item{palette}{A character string indicating the colour palette to use:
 \itemize{
-\item "GSS" (or "gss")
+\item "AF" (or "af")
 \item "FC" (or "fc")
-\item "UKHSA" (or "ukhsa")
 }}
 
 \item{direction}{For FC palette only: sets the order of the colours. If 1 (the default) colours are as output by fc_palette. If -1, the order of colours is reversed.}
@@ -23,7 +22,7 @@ A function.
 Generate palette
 }
 \examples{
-ggplot2::discrete_scale("fill", "gss", generate_palette)
+ggplot2::discrete_scale("fill", "af", generate_palette)
 }
 \author{
 Si Maxwell \email{simon.maxwell@ukhsa.gov.uk}

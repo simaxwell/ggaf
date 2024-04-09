@@ -1,12 +1,12 @@
-#' @title Government Statistical Service (GSS) palette
+#' @title Analysis Function (AF) palette
 #'
-#' @description Returns name and hex code for Government Statistical Service (GSS) colours.
+#' @description Returns name and hex code for Government Analysis Function (AF) colours.
 #' Calling the function with no arguments returns all colours.
 #' If an integer (n) is passed to the function the nth colour is returned.
 #' If the name(s) of specific colours are passed to the function, the name and hex
 #' code of those colours are returned.
 #'
-#' @details See \link[GSS data visualisation colour guidance]{https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/}
+#' @details See \link[AF data visualisation colour guidance]{https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/}
 #'
 #' @param ... Integer or colour name(s) as character strings.
 #' Eight colours are available:
@@ -24,13 +24,11 @@
 #' @return Returns a named character vector.
 #' @export
 #'
-#'
-#'
 #' @examples
-#' gss_palette(1)
-gss_palette <- function(...) {
+#' af_palette(1)
+af_palette <- function(...) {
 
-  gss_cols <- c(
+  af_cols <- c(
     `dark_blue`    = "#12436D",
     `turquoise`    = "#28A197",
     `dark_pink`    = "#801650",
@@ -44,8 +42,8 @@ gss_palette <- function(...) {
   cols <- c(...)
 
   if (is.null(cols))
-    return (gss_cols)
+    return (af_cols)
 
-  gss_cols[cols]
+  af_cols[cols]
 
 }

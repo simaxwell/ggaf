@@ -1,8 +1,8 @@
-#' @title GSS-style scale functions (fill) for ggplot2
+#' @title AF-style scale functions (fill) for ggplot2
 #'
-#' @description Create a discrete ggplot2 fill scale function for the GSS colour palette.
+#' @description Create a discrete ggplot2 fill scale function for the AF colour palette.
 #'
-#' @param palette The palette name: either GSS (default), FC or UKHSA.
+#' @param palette The palette name: either AF (default) or FC
 #' @param direction For FC palette only: sets the order of the colours. If 1 (the default) colours are as output by fc_palette. If -1, the order of colours is reversed.
 #' @param ... Parameters to \code{\link[ggplot2]{discrete_scale}}.
 #'
@@ -18,21 +18,21 @@
 #' @author Si Maxwell \email{simon.maxwell@@ukhsa.gov.uk}
 #'
 #' @examples
-#' ggplot2::discrete_scale("fill", "gss", generate_palette("gss"))
-scale_fill_gss_d <- function(palette = "gss", direction = 1, ...) {
+#' ggplot2::discrete_scale("fill", "af", generate_palette("af"))
+scale_fill_af_d <- function(palette = "af", direction = 1, ...) {
 
   ggplot2::discrete_scale(
-    "fill", "gss",
+    "fill", "af",
     generate_palette(palette, direction),
     ...
   )
 }
 
-#' @title GSS-style scale functions (colour) for ggplot2
+#' @title AF-style scale functions (colour) for ggplot2
 #'
-#' @description Create a discrete ggplot2 colour scale function for the GSS colour palette.
+#' @description Create a discrete ggplot2 colour scale function for the AF colour palette.
 #'
-#' @param palette The palette name: either GSS (default), FC or UKHSA.
+#' @param palette The palette name: either AF (default) or FC.
 #' @param direction For FC palette only: sets the order of the colours. If 1 (the default) colours are as output by fc_palette. If -1, the order of colours is reversed.
 #' @param ... Parameters to \code{\link[ggplot2]{discrete_scale}}.
 #'
@@ -44,11 +44,11 @@ scale_fill_gss_d <- function(palette = "gss", direction = 1, ...) {
 #' @author Si Maxwell \email{simon.maxwell@@ukhsa.gov.uk}
 #'
 #' @examples
-#' ggplot2::discrete_scale("colour", "gss", generate_palette("gss"))
-scale_colour_gss_d <- function(palette = "gss", direction = 1, ...) {
+#' ggplot2::discrete_scale("colour", "af", generate_palette("af"))
+scale_colour_af_d <- function(palette = "af", direction = 1, ...) {
 
   ggplot2::discrete_scale(
-    "colour", "gss",
+    "colour", "af",
     generate_palette(palette, direction),
     ...
   )

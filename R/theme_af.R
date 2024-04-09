@@ -1,6 +1,6 @@
-#' @title Government Statistical Service (GSS) ggplot2 theme
+#' @title Analysis Function (AF) ggplot2 theme
 #'
-#' @description A GSS style ggplot2 theme
+#' @description An AF style ggplot2 theme
 #'
 #' @details See \link[UK Government Analysis Function chart guidance]{https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/} for more information.
 #'
@@ -31,9 +31,9 @@
 #' geom_col()
 #'
 #' p3 +
-#' scale_y_gss_c() +
-#' theme_gss()
-theme_gss <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark = NULL, ...){
+#' scale_y_af_c() +
+#' theme_af()
+theme_af <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark = NULL, ...){
 
   # Base theme:
   theme <- theme_grey(base_size = font_size) +
@@ -41,7 +41,7 @@ theme_gss <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark 
     # Suppress the y-axis label. Re-assign y-axis label to subtitle:
     #
 
-    # GSS chart style:
+    # af chart style:
     theme(
 
       # Pass in the dots:
@@ -96,7 +96,7 @@ theme_gss <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark 
 
     )
 
-  #
+  # Format gridlines:
   if (inherits(grid, "character")) {
 
     grid <- tolower(grid)
@@ -125,6 +125,7 @@ theme_gss <- function(font_size = 12, font_family = NULL, grid = "y", tick_mark 
 
   }
 
+  # Format tick marks:
   if (inherits(tick_mark, "character")) {
 
     tick_mark <- tolower(tick_mark)

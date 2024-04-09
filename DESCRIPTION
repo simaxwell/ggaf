@@ -1,15 +1,15 @@
-Package: ggGSS
+Package: ggaf
 Type: Package
 Title: Produce data visualisations formatted to UK Government Analysis Function best practice guidance
 Version: 0.0.0.9000
 Author: Si Maxwell
-Maintainer: Si Maxwell <simon.maxwell@forestresearch.gov.uk>
+Maintainer: Si Maxwell <simon.maxwell@ukhsa.gov.uk>
 Description: An R pacakge to produce data visualisations formatted in compilance with best practice guidance from the UK Government's Analysis Function.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/simaxwell/ggGSS
-BugReports: https://github.com/simaxwell/ggGSS/issues
+URL: https://github.com/simaxwell/ggaf
+BugReports: https://github.com/simaxwell/ggaf/issues
 Imports: 
     ggplot2

@@ -4,24 +4,23 @@
 \alias{palette_selector}
 \title{Palette selector}
 \usage{
-palette_selector(palette = "GSS")
+palette_selector(palette = "AF")
 }
 \arguments{
 \item{palette}{A character string indicating the colour palette to use:
 \itemize{
-\item "GSS" (or "gss")
+\item "AF" (or "af")
 \item "FC" (or "fc")
-\item "UKHSA" (or "ukhsa")
 }}
 }
 \value{
 Returns a named character vector.
 }
 \description{
-Select the palette of interest: GSS (default) or FC
+Select the palette of interest: AF (default) or FC
 }
 \examples{
-palette_selector(palette = "GSS")
+palette_selector(palette = "AF")
 }
 \author{
 Si Maxwell \email{simon.maxwell@ukhsa.gov.uk}

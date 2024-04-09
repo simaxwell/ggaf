@@ -1,4 +1,4 @@
-#' GSS formatted position scale for continuous data (x)
+#' Analysis Function formatted position scale for continuous data (x)
 #'
 #' This is a wrapper function for `scale_x_continuous()`, the default scale for continuous x aesthetics. It takes all standard arguments from `scale_x_continuous()` except for `expand` which is set to remove the space between the data and the axes (`expand = expansion(mult = c(0, upper))`).
 #'
@@ -22,15 +22,15 @@
 #' geom_col()
 #'
 #' p1 +
-#' scale_x_gss_c()
-scale_x_gss_c <- function(..., upper = 0) {
+#' scale_x_af_c()
+scale_x_af_c <- function(..., upper = 0) {
 
   ggplot2::scale_x_continuous(...,
                               expand = ggplot2::expansion(mult = c(0, upper)))
 
 }
 
-#' GSS formatted position scale for continuous data (y)
+#' Analysis Function formatted position scale for continuous data (y)
 #'
 #' This is a wrapper function for `scale_y_continuous()`, the default scale for continuous x aesthetics. It takes all standard arguments from `scale_y_continuous()` except for `expand` which is set to remove the space between the data and the axes (`expand = expansion(mult = c(0, upper))`).
 #'
@@ -54,8 +54,8 @@ scale_x_gss_c <- function(..., upper = 0) {
 #' geom_col()
 #'
 #' p2 +
-#' scale_y_gss_c()
-scale_y_gss_c <- function(..., upper = 0) {
+#' scale_y_af_c()
+scale_y_af_c <- function(..., upper = 0) {
 
   ggplot2::scale_y_continuous(...,
                               expand = ggplot2::expansion(mult = c(0, upper)))
